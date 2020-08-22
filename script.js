@@ -46,7 +46,7 @@ function generate(){
               document.getElementById("length").innerHTML = "length:" + document.getElementById("text").value;
           }
           else{
-              document.getElementById("length").innerHTML="Length: 8";
+              document.getElementById("text").innerHTML="Length: 8";
           }
         }
       } else{
