@@ -46,10 +46,10 @@ function generate(){
               document.getElementById("length").innerHTML = "length:" + document.getElementById("text").value;
           }
           else{
-              document.getElementById("text").innerHTML="Length: 8";
+              document.getElementById("length").innerHTML="Length: 8";
           }
         }
       } else{
-      confirm("Select password criteria and length!");
+      confirm("Select password criteria!");
     }
 }
