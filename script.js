@@ -1,8 +1,8 @@
 
-//Generate functions
+//Generate password generate functions
 
 function generate(){
-  var lowercase = "abcdefghijklmnopqrstuvwxyz";
+      var lowercase = "abcdefghijklmnopqrstuvwxyz";
       var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
       var numbers = "0123456789";
       var special = "!@#$%^&*()_+~`|}{[]:;?><,./-=";
@@ -15,7 +15,7 @@ function generate(){
       //Check lowercase, uppercase, numbers, and/or special characters
       var userpassword = "";
       var passwordSet= "";
-      var isChecked=0;
+      var isChecked = 0;
       if (lowercaseInput.checked) {
         passwordSet += lowercase;
         isChecked=1;
@@ -38,18 +38,18 @@ function generate(){
           userpassword += passwordSet.charAt(Math.floor(Math.random() * passwordSet.length));
         }
 
-        //Length restriction
+        //Display password and length restriction
         document.getElementById("password").value= userpassword;
         document.getElementById("length").innerHTML = ("Length(8-128): "+ document.getElementById("text").value);
         document.getElementById("text").oninput = function(){
         if (document.getElementById("text").value >7){
-              document.getElementById("length").innerHTML = "length:" +document.getElementById("text").value;
+              document.getElementById("length").innerHTML = "length:" + document.getElementById("text").value;
           }
           else{
               document.getElementById("length").innerHTML="Length: 8";
           }
         }
-    } else{
-      confirm("select criteria!");
+      } else{
+      confirm("Select password criteria and length!");
     }
 }

@@ -30,6 +30,14 @@ header {
   color: hsl(206, 17%, 28%);
 }
 
+h2 {
+  color: darkblue;
+}
+
+h4 {
+  color: darkblue;
+}
+
 .card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;

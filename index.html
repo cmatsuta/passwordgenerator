@@ -22,11 +22,8 @@
           <h2>Generate a Password</h2>
         </div>
 
-        <!-- Password Length Slider -->
-        <input type="range" value min="8" max="128" name="slider" id="text">
-                      <div id="length"></div>
-
-        <!-- Character Checkbox -->
+        <!-- Password criteria checkbox -->
+        <h4>Password Criteria</h4>
         <input type="checkbox" id="lowercase">
           <label class="check-label" for="lowercase"><span class="checkbox">Use Lowercase</span></label>
         <input type="checkbox" id="uppercase">
@@ -36,6 +33,11 @@
         <input type="checkbox" id="special">
           <label class="check-label" for="special"><span class="checkbox">Use Special Character</span></label>
 
+        <!-- Password length slider -->
+        <h4>Password Length</h4>
+        <input type="range" value min="8" max="128" name="slider" id="text">
+                      <div id="length"></div>
+        
         <div class="card-body">
             <textarea
               readonly
